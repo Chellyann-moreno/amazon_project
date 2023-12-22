@@ -24,7 +24,7 @@ def create_combined_file():
     # Read the combined CSV file into a DataFrame
     df = pd.read_csv('combined_amzn.csv', index_col=0)
 
-    return df.head(3)
+    return df
 
     
     
@@ -38,7 +38,7 @@ def get_amzn():
                            'Close': 'close', 'Adj Close': 'adjusted_close', 'Volume': 'volume'})\
           .round(2)
 
-    return df.head()
+    return df
 
 #Train/Test Split TSA
 
@@ -49,7 +49,11 @@ def train_test_split(df):
     train = df.iloc[:test_start_index]  # end at the test_start_index
     test = df.iloc[test_start_index:]  # start at the test_start_index
     
-    # Plotting
+    return train, test
+
+
+def plotting_train_test(train,test):
+     # Plotting
     plt.plot(train.index, train.adjusted_close, label='Train')
     plt.plot(test.index, test.adjusted_close, label='Test')
     
@@ -61,5 +65,6 @@ def train_test_split(df):
     
     # Display the plot
     plt.show()
+    
 
     
