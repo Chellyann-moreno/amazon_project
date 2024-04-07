@@ -19,6 +19,7 @@ Our goal include accurately forecasting both daily and quarterly adjusted close 
 5. How variable are Amazon stock prices over time, and has there been any significant change in volatility during specific periods?
 6. Can you identify and analyze any major events (e.g., earnings announcements, market shifts, global events) that coincide with notable spikes or declines in volatility?
 # Data Dictionary:
+![Alt text]([https://github.com/Chellyandy/nlp-project/blob/main/data%20dictionary.pn](https://github.com/Chellyann-moreno/amazon_project/blob/main/working%20docs/Data_Dictionary.png)
 
 # Project Planning, Layout of Science Pipeline:
 # Instructions on How to Reproduce this Project:
